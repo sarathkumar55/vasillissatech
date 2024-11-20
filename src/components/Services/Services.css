@@ -1,0 +1,348 @@
+
+
+.services-page {
+    padding: 20px;
+  }
+  
+  .custom-hero-section {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center; /* Vertically align the content */
+    background: url("../../assets//serviceslanding.jpg") no-repeat center center; /* Background image */
+    background-size: cover; /* Ensure the image covers the section */
+    padding: 40px;
+    color: white;
+    height: 400px; /* Fixed height for the hero section */
+    gap: 20px; /* Add spacing between elements */
+  }
+  
+  .custom-hero-content {
+    max-width: 50%; /* Restrict the width of the text content */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for text readability */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Align text inside the box to the left */
+  }
+  
+  .custom-hero-content .custom-hero-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #f0f0f0; /* Light gray subtitle color */
+    margin-bottom: 10px;
+  }
+  
+  .custom-hero-content .custom-hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.4; /* Improve readability */
+    margin-bottom: 20px;
+    color: #ffffff; /* White title */
+  }
+  
+  .custom-hero-content .custom-hero-breadcrumb {
+    font-size: 14px;
+    color: #c0c0c0; /* Subtle breadcrumb text */
+    margin-bottom: 20px;
+  }
+  
+  .custom-hero-content .custom-hero-description {
+    font-size: 16px;
+    line-height: 1.6; /* Increase line spacing for readability */
+    color: #f5f5f5; /* Slightly lighter text color */
+  }
+  
+  @media (max-width: 768px) {
+    .custom-hero-section {
+      flex-direction: column; /* Stack content vertically */
+      text-align: center; /* Center align text */
+      padding: 20px;
+      height: auto; /* Let the height adjust dynamically */
+    }
+  
+    .custom-hero-content {
+      max-width: 100%; /* Allow text to take full width */
+      background-color: rgba(0, 0, 0, 0.7); /* Darker background for smaller screens */
+    }
+  }
+  
+/* coresection */
+
+.core-services-section {
+    padding: 60px 40px;
+    background-color: #ffffff;
+  }
+  
+  .core-services-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #001f54; /* Navy blue color */
+  }
+  
+  .core-services-description {
+    text-align: center;
+    font-size: 16px;
+    color: #666666; /* Gray color */
+    margin-bottom: 40px;
+  }
+  
+  .service-col {
+    text-align: left;
+  }
+  
+  .service-item {
+    padding: 10px 20px;
+  }
+  
+  .service-icon {
+    margin-bottom: 20px;
+    
+  }
+  
+  .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #001f54; /* Navy blue */
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .service-description {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #666666; /* Gray text */
+  }
+  
+  .service-description li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+
+  
+  .success-section {
+    background-color: #f5f5f5; /* Light grey background */
+   
+  }
+  
+  .success-image {
+    width: 100%; /* Ensure the image takes full width of its column */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  .success-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts at the top */
+    height: 100%; /* Ensure the column fills its container */
+    padding: 20px; /* Add some padding for spacing */
+  }
+  
+  .success-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between elements */
+  }
+  
+  .success-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #001f54; /* Dark blue color */
+    margin-bottom: 10px;
+  }
+  
+  .success-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666; /* Grey text for better readability */
+  }
+  
+  .success-list {
+    list-style-type: disc; /* Use bullets for the list */
+    padding-left: 20px; /* Add padding to align bullets properly */
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .success-content {
+      align-items: flex-start; /* Align text to the left for smaller screens */
+      text-align: left;
+    }
+  }
+  
+  
+  .success-content {
+    display: flex;
+    flex-direction: column; /* Stack text and button vertically */
+    justify-content: center; /* Center align content vertically */
+    gap: 20px; /* Add spacing between elements */
+  }
+  
+  .success-content h3 {
+    color: #001f54; /* Dark blue for the title */
+    font-size: 28px; /* Title font size */
+    margin-bottom: 10px;
+  }
+  
+  .success-content p {
+    font-size: 16px; /* Paragraph font size */
+    line-height: 1.6; /* Line spacing for readability */
+    color: #666666; /* Grey text color */
+  }
+  
+  .success-content button {
+    background-color: #001f54; /* Navy blue button background */
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .success-content button:hover {
+    background-color: #003080; /* Slightly lighter blue on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .success-section {
+      text-align: center; /* Center-align content for smaller screens */
+    }
+  
+    .success-content {
+      align-items: center; /* Center-align text and button */
+    }
+  
+    .success-image {
+      margin-bottom: 20px; /* Add spacing below image */
+    }
+  }
+  
+  
+  .faq-contact-section {
+    margin: 40px 0;
+  }
+  
+  .faq-contact-section form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+
+  .features-section {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px; /* Add spacing around the section */
+  }
+  
+  .feature-column {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: stretch; /* Ensure all cards stretch to the same height */
+  }
+  
+  .feature-card {
+    display: flex;
+    flex-direction: column; /* Stack icon, title, and description vertically */
+    justify-content: space-between; /* Space out content evenly */
+    background-color: #ffffff; /* White background for the cards */
+    border: 1px solid #e6e6e6; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center;
+    padding: 20px; /* Add internal spacing */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px); /* Slight hover elevation */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+  }
+  
+  .feature-icon {
+    margin-bottom: 20px;
+  }
+  
+  .feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #001f54; /* Navy blue for titles */
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 14px;
+    line-height: 1.6; /* Improve readability */
+    color: #666666; /* Grey text for description */
+    margin-top: auto; /* Push description to align content evenly */
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      padding: 15px;
+    }
+  
+    .feature-title {
+      font-size: 16px;
+    }
+  
+    .feature-description {
+      font-size: 14px;
+    }
+  }
+  
+
+  .centered-section {
+    background-color: #d50032; /* Red background */
+    color: white; /* White text color */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: center; /* Center align text */
+    height: 124px; /* Adjust height based on design */
+  }
+  
+  .centered-content {
+    max-width: 600px; /* Restrict width of content for readability */
+  }
+  
+  .centered-title {
+    font-size: 36px; /* Large heading font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white !important;
+  }
+  
+  .centered-subtitle {
+    font-size: 18px; /* Subtitle font size */
+    font-weight: bold;
+    color: #001f54; /* Navy blue for name */
+  }
+  
+  .centered-subtitle span {
+    font-weight: normal;
+    color: #ffffff; /* Lighter text for the role */
+  }
+  
+  @media (max-width: 768px) {
+    .centered-section {
+      height: auto; /* Adjust height for smaller screens */
+      padding: 40px 20px;
+    }
+  
+    .centered-title {
+      font-size: 28px; /* Adjust font size for smaller screens */
+    }
+  
+    .centered-subtitle {
+      font-size: 16px;
+    }
+  }
+  

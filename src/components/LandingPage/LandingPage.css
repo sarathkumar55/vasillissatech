@@ -1,0 +1,399 @@
+.landing-page {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #001f54;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #d50032;
+}
+
+.instant-quote button {
+  background-color: white;
+  color: #001f54;
+  border: 2px solid #001f54;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.instant-quote button:hover {
+  background-color: #001f54;
+  color: white;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6), /* Darken the left side */
+      rgba(0, 0, 0, 0) /* Transparent on the right */
+    ),
+    url("../../assets/Home.png") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: flex-start; /* Align content to the left */
+  align-items: center; /* Center vertically */
+  color: white;
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+}
+
+.banner-content {
+  max-width: 500px; /* Limit text width */
+  z-index: 2; /* Ensure content is above gradient */
+}
+
+.banner-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: white !important;
+}
+
+.banner-description {
+  font-size: 18px;
+  color: white;
+  line-height: 1.6;
+}
+
+/* About Section */
+.about-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .about-content {
+    padding: 0;
+  }
+
+  .about-image img {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Services Section */
+.services-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.services-section .section-title {
+  color: #001f54;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card .service-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.service-card h4 {
+  color: #001f54;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 14px;
+  flex-grow: 1;
+}
+
+.learn-more-link {
+  color: #d50032;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.learn-more-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Benefits Section */
+/* Benefits Section */
+.benefits-section {
+  background-color: white;
+  padding: 40px 20px;
+}
+
+.benefits-text {
+  padding-right: 20px;
+}
+
+.benefits-text h1 {
+  color: #001f54; /* Primary heading color */
+  margin-bottom: 20px;
+}
+
+.benefit-item {
+  margin-bottom: 20px;
+}
+
+.benefit-title {
+  color: #d50032; /* Red for benefit titles */
+  font-weight: bold;
+}
+
+.benefits-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+
+
+/* Insights Section */
+/* Insights Section */
+.insights-section {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.section-title {
+  color: #001f54;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.insight-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.insight-image {
+  position: relative;
+  height: 150px;
+  overflow: hidden;
+}
+
+.insight-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #d50032;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.insight-content {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.insight-content h5 {
+  color: #001f54;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  color: #d50032;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.read-more-link:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+/* Footer */
+.footer {
+  background-color: #001529; /* Dark blue background */
+  color: white;
+  padding: 40px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.footer-logo img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  color: rgba(255, 255, 255, 0.8); /* Light gray text */
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-right {
+  flex: 1;
+  max-width: 40%;
+}
+
+.footer-right h4 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.footer-right p {
+  color: rgba(255, 255, 255, 0.8); /* Light gray text */
+  margin-bottom: 20px;
+}
+
+.consultation-button {
+  background-color: #d50032;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.consultation-button:hover {
+  background-color: #ff4d4f;
+}
+
+/* Difference Section */
+.difference-section {
+  background-color: #001f54; /* Navy blue background */
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.difference-section .highlight {
+  color: #d50032; /* Red highlight */
+}
+
+.difference-section .difference-card {
+  background: none;
+  text-align: left;
+  padding: 20px;
+}
+
+.difference-section .difference-card .icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.difference-section .difference-card h4 {
+  color: white;
+}
+
+.difference-section .difference-card p {
+  color: rgba(255, 255, 255, 0.8);
+}
